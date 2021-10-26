@@ -1,0 +1,9 @@
+def quienVota(edad,distancia):
+    if edad>=70 or edad<18 or distancia>=500:
+        print("Este ciudadano esta exento de votar")
+    else:
+        if edad>=18 or edad<70 or distancia<500:
+            print("Este ciudadano tiene que votar")
+edad=int(input("Ingrese la edad : "))
+distancia=int(input("Ingresse la distancia que el ciudadano vive: Km"))
+quienVota(edad,distancia)
